@@ -1,0 +1,22 @@
+// Agregar gradiente a la nav y logo 
+.gradiente{
+    background-image: linear-gradient(to right,rgba(0, 0, 255, 0.848),rgba(0, 255, 247, 0.93))
+    }
+//Color de la nav vertical 
+.color{
+    background-color: $colorNavVertical;
+}
+
+// fuente de la nav
+a{
+    font-size: $fuenteNav;
+}
+
+h1,h2{
+    @extend .posicion-centro
+}
+p{
+    padding: $pading;
+    font-size: $fuenteP;
+    background-color: rgba(9, 237, 241, 0.611);
+}

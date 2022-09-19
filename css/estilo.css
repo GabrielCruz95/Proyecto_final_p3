@@ -1,0 +1,77 @@
+.animacion, .animacionImg {
+  animation-name: animacion;
+  animation-timing-function: infiniti; }
+
+.posicion-centro, h1, h2 {
+  display: flex;
+  justify-content: center; }
+
+@keyframes animacion {
+  0% {
+    transform: scale(0.2, 0.2); }
+  25% {
+    transform: scale(0.3, 0.3); }
+  50% {
+    transform: scale(0.5, 0.5); }
+  75% {
+    transform: scale(0.75, 0.75); }
+  100% {
+    transform: scale(1, 1); } }
+
+.animacionImg {
+  animation-duration: 2s;
+  padding: 10px; }
+
+a img {
+  transition: all 1s; }
+  a img:hover {
+    transform: translateY(-15px); }
+
+h1 {
+  color: black;
+  padding: 5px;
+  position: center;
+  transition: color 3s , padding 2s; }
+  h1:hover {
+    color: blueviolet;
+    padding: 10px; }
+
+input {
+  font-size: 18px;
+  transition: font-size 1s; }
+  input:focus {
+    font-size: 35px; }
+
+.fondo {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/fonde.jpg);
+  background-attachment: fixed; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.logo img {
+  height: auto;
+  width: 75px; }
+
+.gradiente {
+  background-image: linear-gradient(to right, rgba(0, 0, 255, 0.848), rgba(0, 255, 247, 0.93)); }
+
+.color {
+  background-color: rgba(0, 255, 255, 0.316); }
+
+a {
+  font-size: 20px; }
+
+p {
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgba(9, 237, 241, 0.611); }
+
+@media screen and (max-width: 760px) {
+  .logo img {
+    width: 70px;
+    height: 70px; } }

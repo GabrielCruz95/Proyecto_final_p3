@@ -1,0 +1,4 @@
+@mixin sizeImg ($ancho,$largo){
+    width: $ancho;
+    height: $largo;
+}

@@ -1,0 +1,9 @@
+//MEDIAQUERIE MOBILE
+@media screen and (max-width: 760px) {
+    .logo{
+        img{
+            @include sizeImg (70px,70px);
+        }
+    }
+    
+}

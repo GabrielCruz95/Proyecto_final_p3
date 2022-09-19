@@ -1,0 +1,42 @@
+//Animacion Imagenes
+@keyframes animacion{
+    0%{transform: scale(.2,.2);}
+    25%{transform: scale(.3,.3);}
+    50%{transform: scale(.5,.5);}
+    75%{transform: scale(.75,.75);}
+    100%{transform: scale(1,1);}
+}
+.animacionImg{
+    @extend .animacion;
+    animation-duration: 2s;
+    padding: $pading;
+}
+//Movimiento al pasar sobre logo
+a{
+    img{
+        transition: all 1s;
+        &:hover{
+            transform: translateY(-15px)
+        }
+    }
+}
+//Movimiento del titulo
+h1{
+    color:map-get($estilos,color);
+    padding:map-get($estilos,pading);
+    position:map-get($estilos,position);
+    transition: color 3s , padding 2s;
+
+    &:hover{
+        color: $colorVioleta;
+        padding: 10px;
+    }
+}
+// Animacion de los inputs
+input{
+    font-size: 18px; 
+    transition: font-size 1s;
+    &:focus{
+        font-size: 35px;
+    }
+}
