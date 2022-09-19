@@ -11,10 +11,11 @@
 a{
     font-size: $fuenteNav;
 }
-
+// Correcion de posicion de los H1 Y H2
 h1,h2{
-    @extend .posicion-centro
+    @extend .posicion-centro;
 }
+// Personalizacion de los p
 p{
     padding: $pading;
     font-size: $fuenteP;
